@@ -100,26 +100,43 @@ img {
 	border-style: none;
 }
 
-.wrapper {
+// layout
+.container {
 	@include flex(flex-start, center);
 	flex-direction: column;
-	max-width: 1440px;
 	margin: 0 auto;
+	max-width: 1440px;
 	width: 100%;
 	height: 100%;
-	padding-left: 6rem;
-	padding-right: 6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 
-	@include _1170 {
-		padding-left: 6rem;
-		padding-right: 6rem;
+	@include _480 {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 	@include _768 {
 		padding-left: 4rem;
 		padding-right: 4rem;
 	}
-	@include _480 {
-		padding-left: 2rem;
-		padding-right: 2rem;
+	@include _1170 {
+		padding-left: 6rem;
+		padding-right: 6rem;
 	}
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(12, minmax(0, 1fr));
+	width: 100%;
+}
+
+.aside {
+	display: grid;
+	grid-column-end: span 3;
+}
+
+.info {
+	display: grid;
+	grid-column-end: span 9;
 }
