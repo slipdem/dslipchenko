@@ -9,22 +9,22 @@ function App() {
 				<aside className='aside'>
 					<ul>
 						<li>
-							<a href='#'>Summary</a>
+							<a href='#.'>Summary</a>
 						</li>
 						<li>
-							<a href='#'>Skills</a>
+							<a href='#.'>Skills</a>
 						</li>
 						<li>
-							<a href='#'>Experience</a>
+							<a href='#.'>Experience</a>
 						</li>
 						<li>
-							<a href='#'>Education</a>
+							<a href='#.'>Education</a>
 						</li>
 						<li>
-							<a href='#'>Courses and trainings</a>
+							<a href='#.'>Courses and trainings</a>
 						</li>
 						<li>
-							<a href='#'>Portfolio</a>
+							<a href='#.'>Portfolio</a>
 						</li>
 					</ul>
 				</aside>

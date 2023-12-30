@@ -4,12 +4,13 @@ const Hero = () => {
 	return (
 		<section className='hero'>
 			<svg
+				fill=''
 				role='img'
 				aria-hidden='true'
 				className='svg__dots'>
 				<title>Dot Regular</title>
 				<pattern
-					id='DotRegular-pattern'
+					id='DotRegular-pattern-:R36alb9l6:'
 					x='0'
 					y='0'
 					width='8'
@@ -24,7 +25,7 @@ const Hero = () => {
 				<rect
 					width='100%'
 					height='100%'
-					fill='url(#DotRegular-pattern)'></rect>
+					fill='url(#DotRegular-pattern-:R36alb9l6:)'></rect>
 			</svg>
 			<div className='hero__info'>
 				<h3 className='hero__info-subtitle'>
