@@ -2,6 +2,7 @@
 	position: relative;
 	color: $color-text;
 	width: 100%;
+  margin-bottom: 2.5rem;
 	// margin-left: -1rem;
 	// margin-right: -1rem;
 
@@ -33,6 +34,7 @@
 		}
 		&-text {
 			font-size: 0.875rem;
+      margin-bottom: 0;
 		}
 
 		@include _480 {
@@ -47,7 +49,7 @@
 
 	.svg__dots {
 		position: absolute;
-		width: 100%;
+		width: 100.5%;
 		height: 100%;
 	}
 }

@@ -1,35 +1,20 @@
+import Aside from './components/Aside';
+import Box from './components/Box';
 import Header from './components/Header';
 import Hero from './components/Hero';
+
 
 function App() {
 	return (
 		<div className='container'>
 			<Header />
 			<main className='main'>
-				<aside className='aside'>
-					<ul>
-						<li>
-							<a href='#.'>Summary</a>
-						</li>
-						<li>
-							<a href='#.'>Skills</a>
-						</li>
-						<li>
-							<a href='#.'>Experience</a>
-						</li>
-						<li>
-							<a href='#.'>Education</a>
-						</li>
-						<li>
-							<a href='#.'>Courses and trainings</a>
-						</li>
-						<li>
-							<a href='#.'>Portfolio</a>
-						</li>
-					</ul>
-				</aside>
+				<Aside />
 				<section className='info'>
 					<Hero />
+					<Box title='Skills' className='skills'>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum ipsum inventore natus dolorem voluptatum culpa dignissimos, labore corrupti autem officiis doloribus quasi nam accusamus, alias hic voluptate debitis accusantium!</p>
+					</Box>
 				</section>
 			</main>
 		</div>

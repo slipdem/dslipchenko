@@ -1,0 +1,23 @@
+.aside {
+	&__menu {
+		// @include flex(flex-start, flex-start);
+		// flex-direction: column;
+		max-width: 200px;
+		&-title {
+			font-size: 0.875rem;
+			font-weight: 700;
+			padding-bottom: 0.75rem;
+			border-bottom: 1px solid $color-navy-300;
+		}
+		a {
+			display: block;
+			color: $color-text;
+			text-align: left;
+			&:hover {
+				cursor: pointer;
+				color: $color-primary;
+				text-decoration: none;
+			}
+		}
+	}
+}
