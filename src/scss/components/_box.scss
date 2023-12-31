@@ -8,8 +8,7 @@
 	transition: box-shadow 200ms ease, transform 200ms ease;
 	padding: 0;
 	overflow: hidden;
-	width: clamp(310px, 80%, 850px);
-	margin: 0 auto;
+	width: 100%;
 	&:hover {
 		transform: translate(4px, -4px);
 		box-shadow: -8px 8px 0 $color-navy;
@@ -19,19 +18,54 @@
 		font-size: 0.875rem;
 		color: $color-white;
 		background-color: $color-navy;
-		padding-top: 0.25rem;
-		padding-bottom: 0.25rem;
-		padding-left: 0.75rem;
+		// padding-top: 0.25rem;
+		// padding-bottom: 0.25rem;
+		// padding-left: 0.75rem;
+		padding: 0.25rem 0.75rem;
 		box-shadow: inset 0 0 0 1px $color-white;
 		border-radius: 4px 4px 0 0;
-    letter-spacing: 3px;
-    font-weight: 500;
+		letter-spacing: 3px;
+		font-weight: 500;
+	}
+
+	&__children {
+		padding: 0.75rem;
+	}
+
+	&__footer {
+		padding: 0.25rem 0.75rem;
+		height: 1.5rem;
+		border-top: 1px dotted $color-navy;
+		max-width: 321px;
+		margin-top: 1rem;
+		margin-left: 0.75rem;
+	}
+
+	&__list {
+		list-style-type: disc;
+		padding-left: 1rem;
+		&-item {
+			font-size: 0.875rem;
+
+			span {
+				font-weight: 700;
+				margin-right: 0.25rem;
+			}
+		}
 	}
 }
-
+// skills box
 .box.skills {
 	.box__header {
 		color: $color-text;
 		background-color: $color-green-100;
 	}
+}
+
+// experience box
+.box.experience {
+	box-shadow: -5px 5px $color-background-current, -5px 5px 0 1px $color-black;
+  &:hover {
+    box-shadow: -8px 8px 0 currentColor;
+  }
 }
