@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap');
 *,
 *::before,
 *::after {
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	font-family: 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+	font-family: 'Lato', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
 		'Helvetica Neue', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -23,7 +23,7 @@ body {
 	background-color: $color-background-primary;
 	line-height: 1.5;
 	* {
-		font-family: 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+		font-family: 'Lato', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
 			'Helvetica Neue', sans-serif;
 	}
 }
@@ -99,6 +99,24 @@ figure {
 img {
 	vertical-align: middle;
 	border-style: none;
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+}
+
+.link {
+	@include flex(flex-start, center);
+	color: $color-primary;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.2;
+	gap: 0.5rem;
+	.icon {
+		height: 16px;
+		width: 16px;
+	}
 }
 
 // layout
