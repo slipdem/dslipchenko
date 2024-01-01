@@ -29,7 +29,7 @@ const Courses = () => {
 				</h2>
 				<p className='box__children-info'>
 					<a
-						href=''
+						href='#.'
 						className='link'>
 						Certificate with honor {externalLinkIcon}
 					</a>
