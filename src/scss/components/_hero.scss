@@ -1,8 +1,9 @@
 .hero {
 	position: relative;
+	@include flex(flex-start, center);
 	color: $color-text;
 	width: 100%;
-  margin-bottom: 2.5rem;
+	margin-bottom: 2.5rem;
 	// margin-left: -1rem;
 	// margin-right: -1rem;
 
@@ -29,12 +30,12 @@
 			font-weight: 700;
 			line-height: 1.2;
 			margin: 0;
-			font-size: 2.125rem;
+			font-size: 2.5rem;
 			padding-bottom: 1rem;
 		}
 		&-text {
 			font-size: 0.875rem;
-      margin-bottom: 0;
+			margin-bottom: 0;
 		}
 
 		@include _480 {
@@ -45,6 +46,20 @@
 			margin-left: 2rem;
 			margin-right: 2rem;
 		}
+	}
+
+	&__social {
+		max-width: 295px;
+		border: 1px solid $color-secondary;
+		padding: 0.75rem;
+		width: 100%;
+		position: relative;
+		z-index: 1;
+		border-radius: 2px;
+		padding-bottom: 1rem;
+		padding-right: 2rem;
+		padding-left: 1rem;
+		background: $color-beige;
 	}
 
 	.svg__dots {

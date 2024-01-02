@@ -4,7 +4,7 @@ import Box from '../Box';
 const Portfolio = () => {
 	return (
 		<div className='wrapper'>
-			<Box></Box>
+			<Box className='portfolio'></Box>
 		</div>
 	);
 };

@@ -4,7 +4,6 @@ import Experience from './components/sections/Experience';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/sections/Skills';
-import Courses from './components/sections/Courses';
 import Portfolio from './components/sections/Portfolio';
 
 // ToDO
@@ -20,10 +19,13 @@ function App() {
 				<Aside />
 				<section className='info'>
 					<Hero />
+					<h2 className='section__title'>Professional skills</h2>
 					<Skills />
+					<h2 className='section__title'>Work experience</h2>
 					<Experience />
+					<h2 className='section__title'>Education, Courses and trainings</h2>
 					<Education />
-					<Courses />
+					<h2 className='section__title'>Portfolio</h2>
 					<Portfolio />
 				</section>
 			</main>

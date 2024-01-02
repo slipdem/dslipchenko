@@ -1,5 +1,5 @@
 .box {
-	@include flex(flex-start, unset);
+	@include flex(flex-start, normal);
 	flex-direction: column;
 	color: $color-text;
 	border: 1px solid $color-navy;
@@ -27,6 +27,7 @@
 
 	&__children {
 		padding: 0.25rem 0.75rem;
+		flex: 1 0 auto;
 		&-title {
 			font-size: 1.25rem;
 			line-height: 1.3;
@@ -121,14 +122,9 @@
 	}
 }
 
-.experience,
-.education {
-	margin-bottom: 2rem;
-}
-
 // courses
+.education,
 .courses {
-  .externalLinkIcon{
-    
-  }
+	min-height: 250px;
+	height: 100%;
 }

@@ -101,6 +101,14 @@ img {
 	border-style: none;
 }
 
+.section__title {
+	font-size: 2rem;
+	margin: 0;
+	padding: 1rem 0;
+	width: 100%;
+	text-align: left;
+}
+
 .icon {
 	width: 18px;
 	height: 18px;
@@ -112,7 +120,7 @@ img {
 	font-size: 0.875rem;
 	font-weight: 700;
 	line-height: 1.2;
-	gap: 0.5rem;
+	gap: 3px;
 	.icon {
 		height: 16px;
 		width: 16px;
@@ -147,10 +155,20 @@ img {
 .wrapper {
 	@include flex(flex-start, center);
 	flex-direction: column;
-	// width: clamp(310px, 80%, 920px);
 	width: 100%;
-	// margin: 0 auto;
 	margin-bottom: 4rem;
+}
+
+.grid {
+	display: grid;
+	column-gap: 2rem;
+	row-gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: stretch;
+}
+
+.grid.col-2 {
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .main {

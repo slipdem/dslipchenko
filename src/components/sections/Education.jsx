@@ -1,9 +1,12 @@
 import React from 'react';
 import Box from '../Box';
+import { externalLinkIcon } from '../../assets/svgIcons';
+
+
 
 const Education = () => {
 	return (
-		<div className='wrapper'>
+		<div className='wrapper grid'>
 			<Box
 				title='Education'
 				className='education'
@@ -27,6 +30,22 @@ const Education = () => {
 				</h2>
 				<p className='box__children-info'>
 					Developing and programming of the automated systems
+				</p>
+			</Box>
+
+			<Box
+				title='Courses and trainings'
+				className='courses'
+				date='03/2023 - 07/2023'>
+				<h2 className='box__children-title'>
+					Front-end. The Ultimate Bootcamp for Beginners by Ciklum
+				</h2>
+				<p className='box__children-info'>
+					<a
+						href='#.'
+						className='link'>
+						Certificate with honor {externalLinkIcon}
+					</a>
 				</p>
 			</Box>
 		</div>

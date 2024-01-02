@@ -3,7 +3,7 @@ import Box from '../Box';
 
 const Experience = () => {
 	return (
-		<div className='wrapper'>
+		<div className='wrapper grid col-2'>
 			<Box
 				title='Experience'
 				className='experience'
