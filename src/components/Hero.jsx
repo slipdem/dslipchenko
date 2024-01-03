@@ -1,5 +1,13 @@
 import React from 'react';
-import { svgBackgroundDots } from '../assets/svgIcons';
+import {
+	facebookIcon,
+	githubIcon,
+	linkedinIcon,
+	mailIcon,
+	svgBackgroundDiagonalLines,
+	svgBackgroundDots,
+	telegramIcon,
+} from '../assets/svgIcons';
 
 const Hero = () => {
 	return (
@@ -17,12 +25,45 @@ const Hero = () => {
 				</p>
 			</div>
 			<div className='hero__social'>
-				<h3>Related resources</h3>
-				<div className='navigation__social'>
-					<a href='#.'>email</a>
-					<a href='#.'>git</a>
-					<a href='#.'>linkedIn</a>
-					<a href='#.'>telegram</a>
+				{svgBackgroundDiagonalLines}
+				<div className='hero__social-container'>
+					<h3 className='hero__social-title'>Related resources</h3>
+					<div className='hero__social-media-block'>
+						<picture className='hero__social-photo'>
+							<source srcSet='./img/myPhoto.jpg' />
+							<img
+								src='./img/myPhoto.jpg'
+								alt='Dmytro Slipchenko'
+							/>
+						</picture>
+						<nav className='hero__social-links'>
+							<a href='mailto:dslipchenko@gmail.com'>{mailIcon}</a>
+							<a
+								href='https://github.com/slipdem'
+								target='_blank'
+								rel='noreferrer'>
+								{githubIcon}
+							</a>
+							<a
+								href='https://t.me/slipdem'
+								target='_blank'
+								rel='noreferrer'>
+								{telegramIcon}
+							</a>
+							<a
+								href='https://www.linkedin.com/in/dmytroslipchenko/'
+								target='_blank'
+								rel='noreferrer'>
+								{linkedinIcon}
+							</a>
+							<a
+								href='https://www.facebook.com/slipdem'
+								target='_blank'
+								rel='noreferrer'>
+								{facebookIcon}
+							</a>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -3,6 +3,7 @@
 	@include flex(flex-start, center);
 	color: $color-text;
 	width: 100%;
+	min-height: 300px;
 	margin-bottom: 2.5rem;
 	// margin-left: -1rem;
 	// margin-right: -1rem;
@@ -49,17 +50,65 @@
 	}
 
 	&__social {
-		max-width: 295px;
-		border: 1px solid $color-secondary;
-		padding: 0.75rem;
-		width: 100%;
 		position: relative;
-		z-index: 1;
+		border: 1px solid $color-secondary;
+		background: $color-beige;
+		padding: 0.75rem;
 		border-radius: 2px;
 		padding-bottom: 1rem;
 		padding-right: 2rem;
 		padding-left: 1rem;
-		background: $color-beige;
+		width: 100%;
+		max-width: 295px;
+		max-height: 190px;
+		z-index: 1;
+		.svg__diagonal-lines {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0.5rem;
+			left: -0.5rem;
+			background: $color-beige;
+		}
+		&-container {
+			position: relative;
+			background: $color-beige;
+		}
+
+		&-title {
+			font-weight: 700;
+			line-height: 1.2;
+			margin: 0;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			font-size: 1.25rem;
+		}
+		&-media-block {
+			@include flex(flex-start, center);
+			gap: 0.5rem;
+		}
+		&-photo {
+			border: 1px solid $color-secondary;
+			border-radius: 2px;
+			max-width: 120px;
+			display: block;
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+		&-links {
+			@include flex(space-between, center);
+			flex-direction: column;
+			gap: 5px;
+			height: 100%;
+			a {
+				color: $color-navy-800;
+				height: 20px;
+				width: 20px;
+			}
+		}
 	}
 
 	.svg__dots {
