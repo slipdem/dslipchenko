@@ -51,13 +51,8 @@
 
 	&__social {
 		position: relative;
-		border: 1px solid $color-secondary;
-		background: $color-beige;
-		padding: 0.75rem;
-		border-radius: 2px;
-		padding-bottom: 1rem;
-		padding-right: 2rem;
-		padding-left: 1rem;
+		background-color: $color-beige;
+		margin-top: -2rem;
 		width: 100%;
 		max-width: 295px;
 		max-height: 190px;
@@ -68,11 +63,17 @@
 			height: 100%;
 			top: 0.5rem;
 			left: -0.5rem;
-			background: $color-beige;
+			background-color: $color-beige;
 		}
 		&-container {
 			position: relative;
 			background: $color-beige;
+			padding: 0.75rem;
+			border: 1px solid $color-secondary;
+			border-radius: 2px;
+			padding-bottom: 1rem;
+			padding-right: 2rem;
+			padding-left: 1rem;
 		}
 
 		&-title {
