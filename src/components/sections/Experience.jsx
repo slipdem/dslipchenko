@@ -54,7 +54,7 @@ const Experience = () => {
 						documentary support of transactions
 					</li>
 					<li className='box__list-item'>
-						contracts, registration of necessary documents, payment control
+						contracts, registration of necessary documents, payment control,
 						sales plan implementation
 					</li>
 				</ul>
