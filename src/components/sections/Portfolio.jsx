@@ -1,5 +1,5 @@
 import Box from '../Box';
-import { portfolioData } from '../../data/portfolio';
+import { portfolioData } from '../../data/portfolioData';
 
 const Portfolio = () => {
 	return (
@@ -9,7 +9,7 @@ const Portfolio = () => {
 					<Box
 						key={crypto.randomUUID()}
 						className='portfolio'
-						title={cardTitle}
+						title='Portfolio'
 						web={link}
 						git={gitLink}>
 						<h2 className='box__children-title'>{projectTitle}</h2>
@@ -20,8 +20,12 @@ const Portfolio = () => {
 								loading='lazy'
 							/>
 						</picture>
+						<p className='box__children-tech-stack'>
+							{spec.map((item) => (
+								<span key={crypto.randomUUID()}>#{item} </span>
+							))}
+						</p>
 						<p className='box__children-info'>{desription}</p>
-						<p>{spec}</p>
 					</Box>
 				),
 			)}

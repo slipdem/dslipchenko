@@ -44,11 +44,20 @@
 		}
 		&-image {
 			display: block;
-			margin-bottom: toRem(4);
+			margin-bottom: toRem(8);
 
 			img {
 				width: 100%;
 			}
+		}
+		&-tech-stack {
+			font-size: toRem(12);
+			text-transform: lowercase;
+			align-self: flex-end;
+			font-style: italic;
+			font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+			monospace;
+
 		}
 	}
 
@@ -73,6 +82,7 @@
 				@include flex(center, center);
 			}
 			&-text {
+
 			}
 			&-dots {
 				padding-top: 0.25rem;
