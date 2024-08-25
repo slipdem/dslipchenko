@@ -2,8 +2,6 @@ import React from 'react';
 import Box from '../Box';
 import { externalLinkIcon } from '../../assets/svgIcons';
 
-
-
 const Education = () => {
 	return (
 		<div className='wrapper grid'>

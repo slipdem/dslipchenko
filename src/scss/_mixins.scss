@@ -1,7 +1,12 @@
-@mixin flex($justify-content, $align-item) {
+@mixin flex($justify-content, $align-items) {
 	display: flex;
 	justify-content: $justify-content;
-	align-items: $align-item;
+	align-items: $align-items;
+}
+
+@function toRem($value) {
+	$remValue: ($value / 16) + rem;
+	@return $remValue;
 }
 
 @mixin overlay {

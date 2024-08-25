@@ -42,6 +42,14 @@
 			padding-bottom: 0.25rem;
 			margin-bottom: 0.25rem;
 		}
+		&-image {
+			display: block;
+			margin-bottom: toRem(4);
+
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 	&__footer {
