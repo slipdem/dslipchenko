@@ -1,19 +1,24 @@
 .header {
 	width: 100%;
+	position: sticky;
+	top: 0;
+	background-color: $color-beige;
+	// border-bottom: 1px solid $color-black;
+	height: toRem(64);
+	z-index: 20;
 	.navigation {
-    @include flex(space-between, center);
-    width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+		@include flex(space-between, center);
+		width: 100%;
+		line-height: toRem(64);
 		a {
 			color: $color-navy-800;
 		}
 		&__links {
-      @include flex(space-between, center);
+			@include flex(space-between, center);
 			gap: 1rem;
 		}
 		&__social {
-      @include flex(space-between, center);
+			@include flex(space-between, center);
 			gap: 0.5rem;
 		}
 	}

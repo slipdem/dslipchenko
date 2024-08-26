@@ -1,6 +1,6 @@
 import React from 'react';
-import Box from '../Box';
-import { externalLinkIcon } from '../../assets/svgIcons';
+import Box from '../components/Box';
+import { externalLinkIcon } from '../assets/svgIcons';
 
 const Education = () => {
 	return (

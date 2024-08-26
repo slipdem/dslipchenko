@@ -1,52 +1,11 @@
+import { BoxFooter } from './BoxFooter';
 import {
 	dateIcon,
-	listDots,
 	locationIcon,
 	positionIcon,
 	webPageIcon,
 	gitOutlineIcon,
 } from '../assets/svgIcons';
-
-const BoxFooterItem = ({ icon, text, isLinkActive }) => {
-	return isLinkActive ? (
-		<>
-			<li className='box__footer-list-dots'>{listDots}</li>
-			<li>
-				{icon && <span className='box__footer-list-icon'>{icon}</span>}
-				<span className='box__footer-list-text'>
-					<a href={text} target='_black'>
-						{text.length > 30 ? text.slice(0, 30) + '...' : text}
-					</a>
-				</span>
-			</li>
-		</>
-	) : (
-		<>
-			<li className='box__footer-list-dots'>{listDots}</li>
-			<li>
-				{icon && <span className='box__footer-list-icon'>{icon}</span>}
-				<span className='box__footer-list-text'>{text}</span>
-			</li>
-		</>
-	);
-};
-
-const BoxFooter = ({ items }) => {
-	return (
-		<footer className='box__footer'>
-			<ul className='box__footer-list'>
-				{items.map(({ icon, text, isLinkActive }) => (
-					<BoxFooterItem
-						key={crypto.randomUUID()}
-						icon={icon}
-						text={text}
-						isLinkActive={isLinkActive}
-					/>
-				))}
-			</ul>
-		</footer>
-	);
-};
 
 const Box = ({
 	title,

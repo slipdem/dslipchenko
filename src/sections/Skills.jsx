@@ -1,5 +1,4 @@
-import React from 'react';
-import Box from '../Box';
+import Box from '../components/Box';
 
 const Skills = () => {
 	return (

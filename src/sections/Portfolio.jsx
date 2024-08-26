@@ -1,5 +1,5 @@
-import Box from '../Box';
-import { portfolioData } from '../../data/portfolioData';
+import Box from '../components/Box';
+import { portfolioData } from '../data/portfolioData';
 
 const Portfolio = () => {
 	return (

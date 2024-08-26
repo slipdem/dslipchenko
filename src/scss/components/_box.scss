@@ -53,11 +53,9 @@
 		&-tech-stack {
 			font-size: toRem(12);
 			text-transform: lowercase;
-			align-self: flex-end;
 			font-style: italic;
 			font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-			monospace;
-
+				monospace;
 		}
 	}
 
@@ -81,8 +79,8 @@
 			&-icon {
 				@include flex(center, center);
 			}
-			&-text {
-
+			&-text a {
+				font-weight: 500;
 			}
 			&-dots {
 				padding-top: 0.25rem;

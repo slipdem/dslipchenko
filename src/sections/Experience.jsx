@@ -1,5 +1,5 @@
-import Box from '../Box';
-import { experienceData } from '../../data/experienceData';
+import Box from '../components/Box';
+import { experienceData } from '../data/experienceData';
 
 const Experience = () => {
 	return (
