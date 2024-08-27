@@ -1,0 +1,39 @@
+.site-navigation {
+	@include flex(space-between, center);
+
+	&__link {
+		color: $color-navy-800;
+    &:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
+
+	&__links {
+		@include flex(space-between, center);
+		gap: 1rem;
+	}
+
+	&__social {
+		@include flex(space-between, center);
+		gap: 0.5rem;
+	}
+}
+.site-navigation.nav-header {
+	line-height: toRem(64);
+	margin: 0 auto;
+	max-width: 720px;
+}
+
+// ASIDE
+.site-navigation.nav-aside {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: toRem(10);
+
+	.site-navigation__link {
+		display: block;
+		color: $color-text;
+
+	}
+}

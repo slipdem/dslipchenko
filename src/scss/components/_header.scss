@@ -3,23 +3,10 @@
 	position: sticky;
 	top: 0;
 	background-color: $color-beige;
-	// border-bottom: 1px solid $color-black;
 	height: toRem(64);
 	z-index: 20;
-	.navigation {
-		@include flex(space-between, center);
-		width: 100%;
-		line-height: toRem(64);
-		a {
-			color: $color-navy-800;
-		}
-		&__links {
-			@include flex(space-between, center);
-			gap: 1rem;
-		}
-		&__social {
-			@include flex(space-between, center);
-			gap: 0.5rem;
-		}
+	&.scroll {
+		background-color: $color-white;
+		border-bottom: 1px solid $color-black;
 	}
 }

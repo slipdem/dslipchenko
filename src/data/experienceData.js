@@ -30,7 +30,7 @@ export const experienceData = [
 		position: 'technical expert',
 		date: '05/2011 - 05/2013',
 		desription:
-			'Sales of exclusive phones, gadgets, speakers, tablets, PC & Mac,smartphones, and accessories for Apple, Vertu, Tag Hauer, Mobiado.',
+			'Sales of exclusive phones, gadgets, speakers, tablets, PC & Mac, smartphones, and accessories for Apple, Vertu, Tag Hauer and Mobiado',
 		responsibilities: [
 			'work with VIP customers',
 			'installation of applications on iPhone/iPod/iPad',

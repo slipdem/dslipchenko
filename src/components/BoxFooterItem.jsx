@@ -10,7 +10,7 @@ export const BoxFooterItem = ({ icon, text, isLinkActive }) => {
 					<a
 						href={text}
 						target='_black'>
-						{text.length > 30 ? text.slice(0, 30) + '...' : text}
+						{text.length > 33 ? text.slice(0, 33) + '...' : text}
 					</a>
 				</span>
 			</li>

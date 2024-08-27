@@ -3,7 +3,7 @@ import { experienceData } from '../data/experienceData';
 
 const Experience = () => {
 	return (
-		<div className='wrapper grid col-2'>
+		<div className='wrapper grid experience'>
 			{experienceData.map(
 				({ company, position, date, desription, responsibilities }) => (
 					<Box

@@ -3,7 +3,7 @@ import { portfolioData } from '../data/portfolioData';
 
 const Portfolio = () => {
 	return (
-		<div className='wrapper grid'>
+		<div className='wrapper grid portfolio'>
 			{portfolioData.map(
 				({ cardTitle, projectTitle, desription, gitLink, link, img, spec }) => (
 					<Box

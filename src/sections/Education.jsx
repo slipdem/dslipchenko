@@ -4,7 +4,7 @@ import { externalLinkIcon } from '../assets/svgIcons';
 
 const Education = () => {
 	return (
-		<div className='wrapper grid'>
+		<div className='wrapper grid education'>
 			<Box
 				title='Education'
 				className='education'

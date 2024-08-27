@@ -2,7 +2,7 @@ import Box from '../components/Box';
 
 const Skills = () => {
 	return (
-		<div className='wrapper'>
+		<div className='wrapper skills'>
 			<Box
 				title='Skills'
 				className='skills'>

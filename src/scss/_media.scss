@@ -1,0 +1,22 @@
+.grid.experience {
+	grid-template-columns: repeat(2, 1fr);
+	@include _768 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.grid.education {
+	@include _979 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include _768 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.grid.portfolio {
+	@include _1170 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include _768 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

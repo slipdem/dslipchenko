@@ -12,7 +12,7 @@ import {
 
 const Hero = () => {
 	return (
-		<section className='hero'>
+		<section className='hero' id='summary'>
 			{svgBackgroundDots}
 			<div className='hero__info'>
 				<h3 className='hero__info-subtitle'>

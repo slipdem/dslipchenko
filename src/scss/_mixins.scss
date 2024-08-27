@@ -12,34 +12,34 @@
 @mixin overlay {
 	// background-color: rgba($color: #000000, $alpha: 0.6);
 }
-
-@mixin _350 {
-	@media only screen and (min-width: 350px) {
-		@content;
-	}
-}
-@mixin _480 {
-	@media only screen and (min-width: 480px) {
-		@content;
-	}
-}
-@mixin _600 {
-	@media only screen and (min-width: 600px) {
-		@content;
-	}
-}
-@mixin _768 {
-	@media only screen and (min-width: 768px) {
+@mixin _1170 {
+	@media only screen and (max-width: 1170px) {
 		@content;
 	}
 }
 @mixin _979 {
-	@media only screen and (min-width: 979px) {
+	@media only screen and (max-width: 979px) {
 		@content;
 	}
 }
-@mixin _1170 {
-	@media only screen and (min-width: 1170px) {
+@mixin _768 {
+	@media only screen and (max-width: 768px) {
+		@content;
+	}
+}
+@mixin _600 {
+	@media only screen and (max-width: 600px) {
+		@content;
+	}
+}
+@mixin _480 {
+	@media only screen and (max-width: 480px) {
+		@content;
+	}
+}
+
+@mixin _350 {
+	@media only screen and (max-width: 350px) {
 		@content;
 	}
 }
