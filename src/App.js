@@ -7,43 +7,58 @@ import {
 	Aside,
 } from './sections';
 import Header from './components/Header';
+import { SectionTitle } from './components/SectionTitle';
+import { useEffect, useState } from 'react';
 
 function App() {
+	const [isScroll, setIsScroll] = useState(false);
+
+	useEffect(() => {
+		function handleScroll() {
+			if (document.documentElement.scrollTop > 50) {
+				setIsScroll(true);
+			} else {
+				setIsScroll(false);
+			}
+		}
+		window.onscroll = function () {
+			console.log(document.documentElement.scrollTop);
+			handleScroll();
+		};
+
+		// return window.removeEventListener('scroll', handleScroll);
+	}, [window]);
+
 	return (
 		<>
-			<Header />
+			<Header isScroll={isScroll} />
 			<div className='container'>
 				<main className='main'>
 					<Aside />
-					<section className='info'>
+					<div className='info'>
 						<Hero />
-						<h2
-							className='section__title'
-							id='skills'>
-							Professional skills
-						</h2>
+						<SectionTitle
+							id='skills'
+							title='Professional skills'
+						/>
 						<Skills />
-						<h2
-							className='section__title'
-							id='experience'>
-							Work experience
-						</h2>
+						<SectionTitle
+							id='experience'
+							title='Work experience'
+						/>
 						<Experience />
-						<h2
-							className='section__title'
-							id='education'>
-							Education, Courses and trainings
-						</h2>
+						<SectionTitle
+							id='education'
+							title='Education, Courses and trainings'
+						/>
 						<Education />
-						<h2
-							className='section__title'
-							id='portfolio'>
-							Portfolio
-						</h2>
+						<SectionTitle
+							id='portfolio'
+							title='Portfolio'
+						/>
 						<Portfolio />
-					</section>
+					</div>
 				</main>
-				<footer></footer>
 			</div>
 		</>
 	);

@@ -7,7 +7,6 @@ export const svgBackgroundDots = (
 		role='img'
 		aria-hidden='true'
 		className='svg__dots'>
-		<title>Dot Regular</title>
 		<pattern
 			id='DotRegular-pattern-:R36alb9l6:'
 			x='0'
@@ -242,7 +241,6 @@ export const svgBackgroundDiagonalLines = (
 		role='img'
 		aria-hidden='true'
 		className='enh0vm40 gamut-flio2t e3tf18d0 svg__diagonal-lines'>
-		<title>Diagonal A Dense</title>
 		<pattern
 			id='DiagonalADense-pattern-:R2dal6alb9l6:'
 			x='0'

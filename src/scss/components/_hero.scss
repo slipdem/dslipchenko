@@ -20,7 +20,7 @@
 		top: -25px;
 		margin-left: auto;
 		@include _1170 {
-			margin-left: toRem(8);
+			margin-left: rem(8);
 			margin-right: auto;
 			margin-bottom: 0;
 		}
@@ -65,7 +65,7 @@
 	z-index: 1;
 	@include _1170 {
 		margin-left: auto;
-		margin-right: toRem(8);
+		margin-right: rem(8);
 	}
 	@include _600 {
 		margin-left: auto;
@@ -96,12 +96,12 @@
 		font-weight: 700;
 		line-height: 1.2;
 		margin: 0;
-		padding-top: toRem(8);
-		padding-bottom: toRem(8);
+		padding-top: rem(8);
+		padding-bottom: rem(8);
 	}
 	&__media-block {
 		@include flex(flex-start, center);
-		gap: toRem(8);
+		gap: rem(8);
 	}
 	&__photo {
 		display: block;
@@ -126,7 +126,7 @@
 	}
 	.social__link {
 		@include flex(flex-start, center);
-		font-size: toRem(14);
+		font-size: rem(14);
 		color: $color-navy-800;
 		gap: 5px;
 		height: 20px;

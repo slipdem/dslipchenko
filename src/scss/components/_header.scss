@@ -3,8 +3,9 @@
 	position: sticky;
 	top: 0;
 	background-color: $color-beige;
-	height: toRem(64);
+	height: rem(64);
 	z-index: 20;
+	transition: 0.2s;
 	&.scroll {
 		background-color: $color-white;
 		border-bottom: 1px solid $color-black;

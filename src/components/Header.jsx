@@ -1,8 +1,8 @@
 import { SiteNavigation } from './SiteNavigation';
 
-const Header = () => {
+const Header = (isScroll) => {
 	return (
-		<header className='header'>
+		<header className={`header ${isScroll ? '' : 'scroll'}`}>
 			<div className='navigation'>
 				<SiteNavigation className='nav-header' />
 			</div>

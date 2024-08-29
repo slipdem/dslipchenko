@@ -20,7 +20,7 @@
 	}
 }
 .site-navigation.nav-header {
-	line-height: toRem(64);
+	line-height: rem(64);
 	margin: 0 auto;
 	max-width: 720px;
 }
@@ -29,7 +29,7 @@
 .site-navigation.nav-aside {
 	flex-direction: column;
 	align-items: flex-start;
-	gap: toRem(10);
+	gap: rem(10);
 
 	.site-navigation__link {
 		display: block;

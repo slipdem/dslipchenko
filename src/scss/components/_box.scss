@@ -44,14 +44,14 @@
 		}
 		&-image {
 			display: block;
-			margin-bottom: toRem(8);
+			margin-bottom: rem(8);
 
 			img {
 				width: 100%;
 			}
 		}
 		&-tech-stack {
-			font-size: toRem(12);
+			font-size: rem(12);
 			text-transform: lowercase;
 			font-style: italic;
 			font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
