@@ -1,9 +1,12 @@
 .site-navigation {
-	@include flex(space-between, center);
+	@include flex(space-around, center);
 
 	&__link {
 		color: $color-navy-800;
-    &:hover {
+		&.active {
+			font-weight: 700;
+		}
+		&:hover {
 			cursor: pointer;
 			text-decoration: underline;
 		}
@@ -34,6 +37,5 @@
 	.site-navigation__link {
 		display: block;
 		color: $color-text;
-
 	}
 }

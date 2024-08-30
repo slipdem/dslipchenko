@@ -1,62 +1,65 @@
-import {
-	Portfolio,
-	Education,
-	Experience,
-	Hero,
-	Skills,
-	Aside,
-} from './sections';
+import { Portfolio, Education, Experience, Hero, Skills } from './sections';
 import Header from './components/Header';
-import { SectionTitle } from './components/SectionTitle';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
 	const [isScroll, setIsScroll] = useState(false);
+	const [isActive, setIsActive] = useState(false);
+	const refHero = useRef(null);
+	const refSkills = useRef(null);
+	const refExperience = useRef(null);
+	const refEducation = useRef(null);
+	const refPortfolio = useRef(null);
 
 	useEffect(() => {
-		function handleScroll() {
-			if (document.documentElement.scrollTop > 50) {
-				setIsScroll(true);
-			} else {
-				setIsScroll(false);
-			}
-		}
-		window.onscroll = function () {
-			console.log(document.documentElement.scrollTop);
-			handleScroll();
-		};
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						setIsActive(entry.target.id);
+					}
+				});
+			},
+			{
+				rootMargin: '-150px',
+				threshold: 0.4,
+			},
+		);
+		if (refHero.current) observer.observe(refHero.current);
+		if (refSkills.current) observer.observe(refSkills.current);
+		if (refExperience.current) observer.observe(refExperience.current);
+		if (refEducation.current) observer.observe(refEducation.current);
+		if (refPortfolio.current) observer.observe(refPortfolio.current);
+		return () => observer.disconnect();
+	}, []);
 
-		// return window.removeEventListener('scroll', handleScroll);
-	}, [window]);
+	const handleScroll = () => {
+		if (document.documentElement.scrollTop > 50) {
+			setIsScroll(true);
+		} else {
+			setIsScroll(false);
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
 	return (
 		<>
-			<Header isScroll={isScroll} />
+			<Header
+				isScroll={isScroll}
+				isActive={isActive}
+			/>
 			<div className='container'>
 				<main className='main'>
-					<Aside />
 					<div className='info'>
-						<Hero />
-						<SectionTitle
-							id='skills'
-							title='Professional skills'
-						/>
-						<Skills />
-						<SectionTitle
-							id='experience'
-							title='Work experience'
-						/>
-						<Experience />
-						<SectionTitle
-							id='education'
-							title='Education, Courses and trainings'
-						/>
-						<Education />
-						<SectionTitle
-							id='portfolio'
-							title='Portfolio'
-						/>
-						<Portfolio />
+						<Hero ref={refHero} />
+						<Skills ref={refSkills} />
+						<Experience ref={refExperience} />
+						<Education ref={refEducation} />
+						<Portfolio ref={refPortfolio} />
 					</div>
 				</main>
 			</div>

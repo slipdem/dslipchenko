@@ -1,11 +1,13 @@
+import { forwardRef } from 'react';
 import { HeroSocial } from './HeroSocial';
 import { svgBackgroundDots } from '../assets/svgIcons';
 
-const Hero = () => {
+const Hero = forwardRef((props, ref) => {
 	return (
 		<section
 			className='hero'
-			id='summary'>
+			id='summary'
+			ref={ref}>
 			{svgBackgroundDots}
 			<div className='hero__info'>
 				<h3 className='hero__info-subtitle'>
@@ -21,6 +23,6 @@ const Hero = () => {
 			<HeroSocial />
 		</section>
 	);
-};
+});
 
 export default Hero;

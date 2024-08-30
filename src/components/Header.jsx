@@ -1,10 +1,13 @@
 import { SiteNavigation } from './SiteNavigation';
 
-const Header = (isScroll) => {
+const Header = ({ isScroll, isActive }) => {
 	return (
-		<header className={`header ${isScroll ? '' : 'scroll'}`}>
+		<header className={`header ${isScroll ? 'scroll' : ''}`}>
 			<div className='navigation'>
-				<SiteNavigation className='nav-header' />
+				<SiteNavigation
+					className='nav-header'
+					active={isActive}
+				/>
 			</div>
 		</header>
 	);
