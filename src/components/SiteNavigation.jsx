@@ -1,46 +1,23 @@
+const NAV_DATA = [
+	{ href: '#root', id: 'root', title: 'Home' },
+	{ href: '#summary', id: 'summary', title: 'Summary' },
+	{ href: '#skills', id: 'skillsIntersection', title: 'Skills' },
+	{ href: '#experience', id: 'experienceIntersection', title: 'Experience' },
+	{ href: '#education', id: 'educationIntersection', title: 'Education' },
+	{ href: '#portfolio', id: 'portfolioIntersection', title: 'Portfolio' },
+];
+
 export const SiteNavigation = ({ active, className = '' }) => {
 	return (
 		<nav className={`site-navigation ${className}`}>
-			<a
-				className={`site-navigation__link`}
-				href='#root'>
-				Home
-			</a>
-			<a
-				className={`site-navigation__link ${
-					active === 'summary' ? 'active' : ''
-				}`}
-				href='#summary'>
-				Summary
-			</a>
-			<a
-				className={`site-navigation__link ${
-					active === 'skillsIntersection' ? 'active' : ''
-				}`}
-				href='#skills'>
-				Skills
-			</a>
-			<a
-				className={`site-navigation__link ${
-					active === 'experienceIntersection' ? 'active' : ''
-				}`}
-				href='#experience'>
-				Experience
-			</a>
-			<a
-				className={`site-navigation__link ${
-					active === 'educationIntersection' ? 'active' : ''
-				}`}
-				href='#education'>
-				Education
-			</a>
-			<a
-				className={`site-navigation__link ${
-					active === 'portfolioIntersection' ? 'active' : ''
-				}`}
-				href='#portfolio'>
-				Portfolio
-			</a>
+			{NAV_DATA.map(({ href, id, title }) => (
+				<a
+					key={crypto.randomUUID()}
+					className={`site-navigation__link ${active === id ? 'active' : ''}`}
+					href={href}>
+					{title}
+				</a>
+			))}
 		</nav>
 	);
 };
