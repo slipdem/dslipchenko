@@ -1,7 +1,8 @@
 {
   "name": "dslipchenko",
+  "homepage": "https://slipdem.github.io/dslipchenko/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.0",
