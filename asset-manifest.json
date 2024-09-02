@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/slipdem/dslipchenko/static/css/main.bd2a92e0.css",
+    "main.js": "/slipdem/dslipchenko/static/js/main.5c1f5b26.js",
+    "index.html": "/slipdem/dslipchenko/index.html",
+    "main.bd2a92e0.css.map": "/slipdem/dslipchenko/static/css/main.bd2a92e0.css.map",
+    "main.5c1f5b26.js.map": "/slipdem/dslipchenko/static/js/main.5c1f5b26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd2a92e0.css",
+    "static/js/main.5c1f5b26.js"
+  ]
+}
