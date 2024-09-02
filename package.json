@@ -1,6 +1,6 @@
 {
   "name": "dslipchenko",
-  "homepage": "https://slipdem.github.io/dslipchenko/",
+  "homepage": "https://github.com/slipdem/dslipchenko",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -20,7 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
