@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dslipchenko/static/css/main.bd2a92e0.css",
-    "main.js": "/dslipchenko/static/js/main.5c1f5b26.js",
+    "main.js": "/dslipchenko/static/js/main.c9a8ba3c.js",
     "index.html": "/dslipchenko/index.html",
     "main.bd2a92e0.css.map": "/dslipchenko/static/css/main.bd2a92e0.css.map",
-    "main.5c1f5b26.js.map": "/dslipchenko/static/js/main.5c1f5b26.js.map"
+    "main.c9a8ba3c.js.map": "/dslipchenko/static/js/main.c9a8ba3c.js.map"
   },
   "entrypoints": [
     "static/css/main.bd2a92e0.css",
-    "static/js/main.5c1f5b26.js"
+    "static/js/main.c9a8ba3c.js"
   ]
 }
