@@ -1,8 +1,7 @@
 export const portfolioData = [
 	{
-		cardTitle: 'Portfolio',
 		projectTitle: 'Furniture LP',
-		spec: ['HTML', 'SASS/SCSS', 'JavaScript', 'GSAP', 'swiper', 'GIT'],
+		spec: ['HTML', 'SASS/SCSS', 'JavaScript', 'GSAP', 'SWIPER', 'GIT'],
 		desription:
 			'A minimalist landing page for furniture, crafted with HTML and styled using SASS. It features smooth, engaging animations powered by GSAP, providing an elegant user experience. Perfect for showcasing modern furniture designs with a clean and responsive layout, ensuring a seamless interaction across all devices.',
 		link: 'https://furni-lp.netlify.app/',
@@ -10,7 +9,6 @@ export const portfolioData = [
 		img: './img/portfolio_previews/furni_lp_preview.webp',
 	},
 	{
-		cardTitle: 'Portfolio',
 		projectTitle: 'BOSE Audio LP',
 		spec: ['HTML', 'CSS', 'JavaScript', 'GIT'],
 		desription:
@@ -20,7 +18,6 @@ export const portfolioData = [
 		img: './img/portfolio_previews/bose_lp_preview.webp',
 	},
 	{
-		cardTitle: 'Portfolio',
 		projectTitle: 'Simply Invest LP',
 		spec: ['HTML', 'CSS', 'JavaScript', 'GIT'],
 		desription:
@@ -30,7 +27,15 @@ export const portfolioData = [
 		img: './img/portfolio_previews/simply_invest_lp_preview.webp',
 	},
 	{
-		cardTitle: 'Portfolio',
+		projectTitle: 'Commit LP',
+		spec: ['HTML', 'CSS', 'JavaScript', 'GIT', 'SWIPER'],
+		desription:
+			"Commit LP is a simple, responsive landing page for a web development company, designed in striking red tones. Built with HTML, CSS, and JavaScript, it effectively showcases the company's expertise in creating websites, offering a clean and professional design that adapts seamlessly to any device.",
+		link: 'https://slipdem.github.io/commit-lp/',
+		gitLink: 'https://github.com/slipdem/commit-lp',
+		img: './img/portfolio_previews/commit_lp_preview.webp',
+	},
+	{
 		projectTitle: 'Ciklum course project / undergoing rework',
 		spec: [
 			'React',
@@ -48,7 +53,6 @@ export const portfolioData = [
 		img: './img/portfolio_previews/ciklum_bookstore_preview.webp',
 	},
 	{
-		cardTitle: 'Portfolio',
 		projectTitle: 'teamchallenge.io / ongoing',
 		spec: [
 			'React',
